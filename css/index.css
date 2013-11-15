@@ -1,0 +1,107 @@
+h1{
+	font-family: "Myriad Pro", sans-serif;
+	font-size: 25pt;
+	font-weight: 700;
+}
+.navWord{
+	color: #333333;
+	padding-top: 6pt;
+	padding-bottom: 6pt; 
+	margin-top: 2pt;
+	margin-bottom: 5pt;
+	display: inline-block;
+}
+.navBarWord{
+	display: inline;
+	text-align: center;
+	font-weight: 500;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.50), 0px 1px 0px rgba(255,255,255,0.50);
+}
+#iStr{
+	margin-left: 16pt;
+	margin-right: 16pt;
+}
+.navButtonWord{
+	font-weight: 700;
+	font-style: italic;
+	/*
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.50), 0px 1px 0px rgba(255,255,255,0.50);
+	*/
+}
+.navButtonWordPressed{
+	text-shadow: none;
+}
+.navButton{
+	margin-left: 10pt;
+	margin-right: 10pt;
+	padding-left: 5pt;
+	padding-right: 5pt;
+	border-radius: 7px;
+	box-shadow: 0px 2px 0px rgba(50,50,50,0.5), 0px -2px 0px rgba(255,255,255,0.5), 1px 0px 0px rgba(127,127,127,0.5), -1px 0px 0px rgba(127,127,127,0.5), 0px 2px 6px rgba(47,47,47,0.55);
+}
+.navButtonPressed{
+	margin-left: 10pt;
+	margin-right: 10pt;
+	padding-left: 5pt;
+	padding-right: 5pt;
+	box-shadow: inset 0px 2px 0px rgba(50,50,50,0.5), inset 0px -2px 0px rgba(186,186,186,0.5), inset 1px 0px 0px rgba(127,127,127,0.5), inset -1px 0px 0px rgba(127,127,127,0.5), inset 0px 3px 6px rgba(21,21,21,0.75);
+}
+body{
+	background: #333333;
+	margin: 0pt;
+	min-height: 40in;
+}
+.navBar{
+	position: relative;
+	padding: auto;
+	padding-top: 5pt;
+	background: rgba(222,222,222,1);
+	box-shadow: 0px 4px 4px rgba(0,0,0,0.47);
+}
+#mediaRotator{
+	position: relative;
+	width: 100%;
+	background:-webkit-linear-gradient(#bebebe 0%, #b6b6b6 48.01%, #efefef 62.91%, #dddddd 100%);
+}
+.navBarCenterAlign{
+	position: relative;
+	left: 3%;
+	right: 3%;
+	max-width: 7.9in;
+	margin: 0px auto;
+	-webkit-transform-origin: 0%;
+	-webkit-transform: scale(0.8,1);
+}
+.fixedToTop{
+	position: fixed;
+	width: 100%;
+	top: 0%;
+	padding: auto;
+	padding-top: 5pt;
+}
+.forward{
+	position: relative;
+	z-index: 2;
+}
+.bodyArticle{
+	background: #006f8a;
+	margin: 10pt;
+	height: 6in; 
+}
+/*
+.bodyArticleSection{
+	position: relative;
+	min-height: 8in;
+	margin: 10pt;
+	background:-webkit-linear-gradient(#910303 0%, #057c00 4.3%);
+}
+*/
+#fixedHeader{
+	min-height: 44pt;
+}
+.navBarShim{
+	visibility: hidden;
+}
+.noHeight{
+	max-height: 0pt;
+}
