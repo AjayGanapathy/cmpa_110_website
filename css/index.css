@@ -1,0 +1,4 @@
+/*this CSS file controls the positioning and sizing of specific view items in index.html. It relies on waffle-house-bootstrap for generic theme styling, and only controls specific DOM elements
+*/
+#footerNav{}
+#tabBar{}
