@@ -1,4 +1,3 @@
-/*
 h1{
 	font-family: "Myriad Pro", sans-serif;
 	font-size: 25pt;
@@ -25,6 +24,9 @@ h1{
 .navButtonWord{
 	font-weight: 700;
 	font-style: italic;
+	/*
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.50), 0px 1px 0px rgba(255,255,255,0.50);
+	*/
 }
 .navButtonWordPressed{
 	text-shadow: none;
@@ -93,6 +95,7 @@ body{
 	margin: 10pt;
 	background:-webkit-linear-gradient(#910303 0%, #057c00 4.3%);
 }
+*/
 #fixedHeader{
 	min-height: 44pt;
 }
@@ -101,8 +104,4 @@ body{
 }
 .noHeight{
 	max-height: 0pt;
-}
-*/
-background {
-	position: fixed;
 }
