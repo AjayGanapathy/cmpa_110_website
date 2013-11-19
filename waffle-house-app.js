@@ -9,5 +9,5 @@ Angular is an MVC framework.
 This file is just the tip of the iceberg. The majority of angular directives, controllers, and services are pre-built.
 */
 //declare modules here
-var waffleHouseAppModule = angular.module('waffleHouseApp',['ui.bootstrap']);
+var waffleHouseApp = angular.module('waffleHouseApp',['ui.bootstrap','navBarModule']);
 //configure modules here

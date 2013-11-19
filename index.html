@@ -5,33 +5,30 @@
 		<title>Waffle House</title>
 		<!--ensure all external resources get app-cached for a period of 24 hours - that way, the CSS doesn't drop because of intermittent connectivity on mobile, but it also gets updated frequently-->
 		<!css goes here>
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/waffle-house-bootstrap-theme.css">
+		<link type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/wh-bootstrap.css" rel="stylesheet">
+		<link type="text/css" href="css/tab-bar.css" rel="stylesheet">
 		<!js goes here>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-		<script type="text/javascript" src="js/waffleHouseApp.js"></script>
-		<script type="text/javascript" scr="customAngularServices.js"></script>
-		<!-- these scripts replace the default bootstrap.js, which is based on jquery, with with boostrap-custom, which is based on angularjs -->
 		<script type="text/javascript" src="js/ui-bootstrap-custom-tpls-0.6.0.min.js"></script>
 		<script type="text/javascript" src="js/ui-bootstrap-custom-0.6.0.min.js"></script>
+		<script type="text/javascript" src="js/waffle-house-app.js"></script>
+		<script type="text/javascript" src="js/navbar-angular.js"></script>
+		<script type="text/javascript" src=""></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-static-top" role="navigation">
-			<!don't forget to add in deep links to your footer nav!>
-			<a href="">FAQ</a>
-			<a href="">Contact Us</a>
-			<a href="">Careers</a>
-			<a href="">Privacy</a>
+		<nav class="fixedInFront top" role="navigation" title="important links">
+			<ul>
+				<a href=""></a>
+			</ul>
 		</nav>
-		<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-			<!don't forget to fontify the shrinking tab bar glyphs!>
-			<!don't forget to add in deep links to your tab bar nav!>
-			<a href="">Locations</a>
-			<a href="">Menu</a>
-			<a href="">Store</a>
-			<a href="">News</a>
-			<a href="">Story</a>
+		<nav class="fixedInFront hzlCentered bottom" role="navigation" title="tabBar">
+			<button type="button" class="tabBar">Locations</button>
+			<button type="button" class="tabBar">Menu</button>
+			<button type="button" class="tabBar">Store</button>
+			<button type="button" class="tabBar">News</button>
+			<button type="button" class="tabBar">Our story</button>
 		</nav>
+		<div style="height:2000px;width:400px;background:blue;position:absolute;"></div>
 	</body>
 </html>
