@@ -1,5 +1,5 @@
 /*sets a bunch of default values - the rest of the classes act as flags that customize behavior*/
-button.tabBar, button.tabBar:hover, button.tabBar:focus{
+.tabBar{
 	cursor:pointer;
 	padding:.5em .5em;
 	display:inline-block;
@@ -8,7 +8,7 @@ button.tabBar, button.tabBar:hover, button.tabBar:focus{
 	font-size:1.2em;
 	border:0px;
 }
-button.tabBar:hover, button.tabBar:focus{
+.pressed{
 	background:blue;
 }
 /*fixed in front removes the navbar from the dom tree and places it above other content*/
@@ -17,30 +17,28 @@ nav.fixedInFront{
 	z-index:1;
 	width: 100%;
 }
-/*top and bottom define position on the page. They are mutex. They will override each other if they are both used*/
-/*why isn't nav.hzlCentered getting picked up?*/
 nav.hzlCentered{
 	text-align:center;
 }
 nav.bottom{
 	bottom:0%;
-};
+}
 nav.top{
 	top:0%;
-};
-/*nav.vtclCentered{}
-nav.left{}
-nav.right{}*/
-/*retractable makes icon disappear completely and makes text shrink when scroll if browser size is small*/
-/*.retractable{}*/
-/*defines content of the tab bars. these are mutex*/
-/*.textOnly{}
-.textOnly:focus{}
-.textBelowIcon{}
-.textBelowIcon:focus{}
-.textAboveIcon{}
-.textAboveIcon:focus{}
-.textLeftOfIcon{}
-.textLeftOfIcon:focus{}
-.textRightOfIcon{}
-.textRightOfIcon:focus{}*/
+}
+.importantLinks{
+	padding-right: 1em;
+	font-size: .75em;
+	cursor:pointer;
+	display:inline;
+	background:none;
+	border:0px;
+}
+.bodyContent{
+	min-height: 1600px;
+	min-width: 400px;
+	display: block;
+}
+.collapsed{
+	display:none;
+}

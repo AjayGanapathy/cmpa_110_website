@@ -1,20 +1,84 @@
 angular.module('navBarModule',[])
-//
-// navBarModule.directive(navElementDirectives);
-// var navElementDirectives = {};
-// navElementDirectives.btnSingle = function('attr_name', function;
-// navElementDirectives.input = function($scope){};
-// navElementDirectives.text = function($scope){};
-// navElementDirectives.dropdown = function($scope){};
-// navElementDirectives.btnGroup = {};
-// navElementDirectives.btnGroup.radio = function($scope){};
-// navElementDirectives.btnGroup.checklist = function($scope){};
-	.directive('navBarElement',function(){
-		function link(scope, element, attr){
-			//your code goes here
-		}
-		return{link: link};
-	})
+	directive('navBar', ['', function(){
+		// Runs during compile
+		return {
+			// name: '',
+			// priority: 1,
+			// terminal: true,
+			// scope: {}, // {} = isolate, true = child, false/undefined = no change
+			// cont­rol­ler: function($scope, $element, $attrs, $transclue) {},
+			// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
+			// restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
+			// template: '',
+			// templateUrl: '',
+			// replace: true,
+			// transclude: true,
+			// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
+			link: function($scope, iElm, iAttrs, controller) {
+				
+			}
+		};
+	}]);
+	directive('radioButton', ['', function(){
+		// Runs during compile
+		return {
+			// name: '',
+			// priority: 1,
+			// terminal: true,
+			// scope: {}, // {} = isolate, true = child, false/undefined = no change
+			// cont­rol­ler: function($scope, $element, $attrs, $transclue) {},
+			// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
+			// restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
+			// template: '',
+			// templateUrl: '',
+			// replace: true,
+			// transclude: true,
+			// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
+			link: function($scope, iElm, iAttrs, controller) {
+				
+			}
+		};
+	}]);
+	directive('toggle', ['', function(){
+		// Runs during compile
+		return {
+			// name: '',
+			// priority: 1,
+			// terminal: true,
+			// scope: {}, // {} = isolate, true = child, false/undefined = no change
+			// cont­rol­ler: function($scope, $element, $attrs, $transclue) {},
+			// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
+			// restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
+			// template: '',
+			// templateUrl: '',
+			// replace: true,
+			// transclude: true,
+			// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
+			link: function($scope, iElm, iAttrs, controller) {
+				
+			}
+		};
+	}]);
+	directive('button', ['', function(){
+		// Runs during compile
+		return {
+			// name: '',
+			// priority: 1,
+			// terminal: true,
+			// scope: {}, // {} = isolate, true = child, false/undefined = no change
+			// cont­rol­ler: function($scope, $element, $attrs, $transclue) {},
+			// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
+			// restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
+			// template: '',
+			// templateUrl: '',
+			// replace: true,
+			// transclude: true,
+			// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
+			link: function($scope, iElm, iAttrs, controller) {
+				
+			}
+		};
+	}]);
 	.controller('ctrl_name',function($scope){
 		//scope manipulation goes here
 	});

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html ng-app="waffleHouseApp">
+<!-- <html ng-app="waffleHouseApp"> -->
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Waffle House</title>
@@ -9,26 +10,97 @@
 		<link type="text/css" href="css/wh-bootstrap.css" rel="stylesheet">
 		<link type="text/css" href="css/tab-bar.css" rel="stylesheet">
 		<!js goes here>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-		<script type="text/javascript" src="js/ui-bootstrap-custom-tpls-0.6.0.min.js"></script>
-		<script type="text/javascript" src="js/ui-bootstrap-custom-0.6.0.min.js"></script>
-		<script type="text/javascript" src="js/waffle-house-app.js"></script>
-		<script type="text/javascript" src="js/navbar-angular.js"></script>
-		<script type="text/javascript" src=""></script>
+		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="js/ui-bootstrap-custom-tpls-0.6.0.min.js"></script> -->
+		<!-- <script type="text/javascript" src="js/ui-bootstrap-custom-0.6.0.min.js"></script> -->
+		<!-- <script type="text/javascript" src="js/waffle-house-app.js"></script> -->
+		<!-- <script type="text/javascript" src="js/navbar-angular.js"></script> -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//all the jquery magic happens here - on document ready, do all this stuff
+				//first, a toggle function
+				$("#locationsButton").click(function(){
+					unpressAll();
+					hideAllContent();
+					$("#locationsButton").addClass("pressed");
+					$("#locations").removeClass("collapsed");
+				});
+				$("#menuButton").click(function(){
+					unpressAll();
+					hideAllContent();
+					$("#menuButton").addClass("pressed");
+					$("#menu").removeClass("collapsed");
+				});
+				$("#storeButton").click(function(){
+					unpressAll();
+					hideAllContent();
+					$("#storeButton").addClass("pressed");
+					$("#store").removeClass("collapsed");
+				});
+				$("#newsButton").click(function(){
+					unpressAll();
+					hideAllContent();
+					$("#newsButton").addClass("pressed");
+					$("#news").removeClass("collapsed");
+				});
+				$("#ourStoryButton").click(function(){
+					unpressAll();
+					hideAllContent();
+					$("#ourStoryButton").addClass("pressed");
+					$("#ourStory").removeClass("collapsed");
+				});
+				$("#careersButton").click(function(){
+					unpressAll();
+					hideAllContent();
+					$("#careers").removeClass("collapsed");
+				});
+				$("#FAQButton").click(function(){
+					unpressAll();
+					hideAllContent();
+					$("#FAQ").removeClass("collapsed");
+				});
+				$("#privacyButton").click(function(){
+					unpressAll();
+					hideAllContent();
+					$("#privacy").removeClass("collapsed");
+				});
+				$("#contactUsButton").click(function(){
+					unpressAll();
+					hideAllContent();
+					$("#contactUs").removeClass("collapsed");
+				});
+				function unpressAll(){
+					$(".tabBar").removeClass("pressed");
+				};
+				function hideAllContent(){
+					$(".bodyContent").addClass("collapsed");
+				};
+			});
+		</script>
 	</head>
-	<body>
-		<nav class="fixedInFront top" role="navigation" title="important links">
-			<ul>
-				<a href=""></a>
-			</ul>
+	<body onresize="">
+		<nav class="fixedInFront top" role="navigation" title="important links" style="text-align:right;">
+			<button class="importantLinks" id="careersButton">Careers</button>
+			<button class="importantLinks" id="FAQButton">FAQ</button>
+			<button class="importantLinks" id="privacyButton">Privacy</button>
+			<button class="importantLinks" id="contactUsButton">Contact Us</button>
 		</nav>
 		<nav class="fixedInFront hzlCentered bottom" role="navigation" title="tabBar">
-			<button type="button" class="tabBar">Locations</button>
-			<button type="button" class="tabBar">Menu</button>
-			<button type="button" class="tabBar">Store</button>
-			<button type="button" class="tabBar">News</button>
-			<button type="button" class="tabBar">Our story</button>
+			<button type="button" class="tabBar" id="locationsButton" onclick="">Locations</button>
+			<button type="button" class="tabBar" id="menuButton" onclick="">Menu</button>
+			<button type="button" class="tabBar" id="storeButton" onclick="">Store</button>
+			<button type="button" class="tabBar" id="newsButton" onclick="">News</button>
+			<button type="button" class="tabBar" id="ourStoryButton" onclick="">Our story</button>
 		</nav>
-		<div style="height:2000px;width:400px;background:blue;position:absolute;"></div>
+		<div class="bodyContent" id="locations" style="background:blue;"></div>
+		<div class="bodyContent" id="menu" style="background:red;"></div>
+		<div class="bodyContent" id="store" style="background:yellow;"></div>
+		<div class="bodyContent" id="news" style="background:green;"></div>
+		<div class="bodyContent" id="ourStory" style="background:purple;"></div>
+		<div class="bodyContent" id="careers" style="background:black;"></div>
+		<div class="bodyContent" id="FAQ" style="background:orange;"></div>
+		<div class="bodyContent" id="privacy" style="background:pink;"></div>
+		<div class="bodyContent" id="contactUs" style="background:green;"></div>
 	</body>
 </html>
