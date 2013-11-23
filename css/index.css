@@ -1,0 +1,80 @@
+/*sets a bunch of default values - the rest of the classes act as flags that customize behavior*/
+.tabBar{
+	cursor:pointer;
+	padding:.5em .5em;
+	display:inline-block;
+	/*float:left;*/
+	background-color: #f9d52f;
+	border:0px;
+	margin: 0em;
+}
+.pressed{
+	background-color: #c9a136;
+}
+/*fixed in front removes the navbar from the dom tree and places it above other content*/
+nav.fixedInFront{
+	position:fixed;
+	z-index:1;
+	width: 100%;
+}
+nav.hzlCentered{
+	text-align:center;
+}
+nav.bottom{
+	bottom:0%;
+	padding: 0;
+	margin: 0;
+}
+nav.top{
+	top:0%;
+	background-color: #f9d52f;
+	box-shadow: 0px 1px 0px 3px rgba(0,0,0,0.4);
+}
+.importantLinks{
+	padding-right: 1em;
+	font-size: 8pt;
+	cursor:pointer;
+	display:inline;
+	background:none;
+	border:0px;
+	color:white;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.bodyContent{
+	height: 568px;
+	width: 320px;
+	width: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 3.7em;
+	padding-bottom: 0em;
+}
+.collapsed{
+	display:none;
+}
+body{
+	padding: 0;
+	margin: 0;
+	background:url('waffle-house.jpg');
+	padding: 0;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#importantLinks{
+	background-color: rgba(0,0,0,0.4);
+	font-size: 6pt;
+}
+.tabIcon{
+	width: 48px;
+	height: 48px;
+	margin-bottom: 1pt;
+}
+img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}

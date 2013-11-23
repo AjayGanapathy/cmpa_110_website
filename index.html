@@ -3,15 +3,16 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<title>Waffle House</title>
 		<!--ensure all external resources get app-cached for a period of 24 hours - that way, the CSS doesn't drop because of intermittent connectivity on mobile, but it also gets updated frequently-->
 		<!css goes here>
-		<link type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-		<link type="text/css" href="css/wh-bootstrap.css" rel="stylesheet">
-		<link type="text/css" href="css/tab-bar.css" rel="stylesheet">
+		<!-- <link type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet"> -->
+		<!-- <link type="text/css" href="css/wh-bootstrap.css" rel="stylesheet"> -->
+		<link type="text/css" href="css/index.css" rel="stylesheet">
 		<!js goes here>
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<!-- <script type="text/javascript" src="js/ui-bootstrap-custom-tpls-0.6.0.min.js"></script> -->
 		<!-- <script type="text/javascript" src="js/ui-bootstrap-custom-0.6.0.min.js"></script> -->
 		<!-- <script type="text/javascript" src="js/waffle-house-app.js"></script> -->
@@ -80,27 +81,28 @@
 		</script>
 	</head>
 	<body onresize="">
-		<nav class="fixedInFront top" role="navigation" title="important links" style="text-align:right;">
+		<nav class="fixedInFront bottom" role="navigation" id="importantLinks" style="text-align:right;">
 			<button class="importantLinks" id="careersButton">Careers</button>
 			<button class="importantLinks" id="FAQButton">FAQ</button>
 			<button class="importantLinks" id="privacyButton">Privacy</button>
 			<button class="importantLinks" id="contactUsButton">Contact Us</button>
 		</nav>
-		<nav class="fixedInFront hzlCentered bottom" role="navigation" title="tabBar">
-			<button type="button" class="tabBar" id="locationsButton" onclick="">Locations</button>
-			<button type="button" class="tabBar" id="menuButton" onclick="">Menu</button>
-			<button type="button" class="tabBar" id="storeButton" onclick="">Store</button>
-			<button type="button" class="tabBar" id="newsButton" onclick="">News</button>
-			<button type="button" class="tabBar" id="ourStoryButton" onclick="">Our story</button>
+		<nav class="fixedInFront hzlCentered top" role="navigation" title="tabBar">
+			<button type="button" class="tabBar" id="locationsButton" onclick=""><img src="css/map.svg" alt="Locations" class="tabIcon"></button>
+			<button type="button" class="tabBar" id="menuButton" onclick=""><img src="css/menu.svg" alt="Menu" class="tabIcon"></button>
+			<button type="button" class="tabBar" id="storeButton" onclick=""><img src="css/store.svg" alt="Store" class="tabIcon"></button>
+			<button type="button" class="tabBar" id="newsButton" onclick=""><img src="css/news.svg" alt="News" class="tabIcon"></button>
+			<button type="button" class="tabBar" id="ourStoryButton" onclick=""><img src="css/story.svg" alt="Our Story" class="tabIcon"></button>
 		</nav>
-		<div class="bodyContent" id="locations" style="background:blue;"></div>
-		<div class="bodyContent" id="menu" style="background:red;"></div>
-		<div class="bodyContent" id="store" style="background:yellow;"></div>
-		<div class="bodyContent" id="news" style="background:green;"></div>
-		<div class="bodyContent" id="ourStory" style="background:purple;"></div>
-		<div class="bodyContent" id="careers" style="background:black;"></div>
-		<div class="bodyContent" id="FAQ" style="background:orange;"></div>
-		<div class="bodyContent" id="privacy" style="background:pink;"></div>
-		<div class="bodyContent" id="contactUs" style="background:green;"></div>
+		<div class="bodyContent" id="landing" style="background:none; height:0px"></div>
+		<div class="bodyContent collapsed" id="locations"><img src="map.png" width="320px" height="568px"></div>
+		<div class="bodyContent collapsed" id="menu"><img src="menu.png" width="320px" height="568px"><img src="menu1.png" width="320px" height="568px"><img src="menu2.png" width="320px" height="568px"></div>
+		<div class="bodyContent collapsed" id="store"><img src="store.png" width="320px" height="568px"><img src="store1.png" width="320px" height="568px"><img src="store2.png" width="320px" height="568px"><img src="store3.png" width="320px" height="568px"></div>
+		<div class="bodyContent collapsed" id="news"><img src="news.png" width="320px" height="568px"><img src="news1.png" width="320px" height="568px"><img src="news2.png" width="320px" height="568px"><img src="news3.png" width="320px" height="568px"></div>
+		<div class="bodyContent collapsed" id="ourStory" style="background:purple;"></div>
+		<div class="bodyContent collapsed" id="careers" style="background:black;"></div>
+		<div class="bodyContent collapsed" id="FAQ" style="background:orange;"></div>
+		<div class="bodyContent collapsed" id="privacy" style="background:pink;"></div>
+		<div class="bodyContent collapsed" id="contactUs" style="background:green;"></div>
 	</body>
 </html>

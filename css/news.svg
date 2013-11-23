@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64" height="64" viewBox="0, 0, 64, 64">
+  <g id="Layer 1 Copy Copy">
+    <path d="M9,3.667 L51,3.667 L51,6.667 L55,6.667 L54.989,8.158 L55,36 L54,38 L53,39 L52,39 L15,39 L12,39 L10,38 L9,36 z M11,5.667 L11,37 L13,38 L51,38 L49,37 L49,5.667 z M51,37 L53,38 L54.012,35.867 L54,7.667 L51,7.667 z" fill="#000000"/>
+    <path d="M31,8 L31,31 L14,31 L14,8 z M29,9.977 L16,9.977 L16,28.675 L29,28.675 z" fill="#000000"/>
+    <path d="M34,8 L46,8 L46,9.998 L34,9.998 z" fill="#000000"/>
+    <path d="M34,12 L46,12 L46,13.998 L34,13.998 z" fill="#000000"/>
+    <path d="M34,16.071 L46,16.071 L46,18.07 L34,18.07 z" fill="#000000"/>
+    <path d="M34,19.998 L46,19.998 L46,21.997 L34,21.997 z" fill="#000000"/>
+    <path d="M34,24.05 L46,24.05 L46,26.048 L34,26.048 z" fill="#000000"/>
+    <path d="M34,28 L46,28 L46,29.998 L34,29.998 z" fill="#000000"/>
+    <path d="M13,32 L46,32 L46,33.998 L13,33.998 z" fill="#000000"/>
+    <path d="M14,36 L47,36 L47,37 L14,37 z" fill="#000000"/>
+    <text transform="matrix(1, 0, 0, 1, 31.286, 53)">
+      <tspan x="-18.286" y="5" font-family="Helvetica-Bold" font-size="14" fill="#000000">News</tspan>
+    </text>
+  </g>
+  <defs/>
+</svg>
